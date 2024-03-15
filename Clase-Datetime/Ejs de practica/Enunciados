@@ -1,0 +1,13 @@
+Calculadora de edad:
+Pide al usuario que introduzca su fecha de nacimiento y calcula su edad en años, meses y días.
+
+Fechas de cumpleaños:
+Pide al usuario que introduzca las fechas de cumpleaños de varios amigos y
+familiares, y luego ordena estas fechas en orden cronológico.
+
+Contador de tiempo transcurrido:
+Crea un contador de tiempo transcurrido que muestre cuánto tiempo ha pasado desde que se inició el programa.
+
+Duración de eventos:
+Pide al usuario que introduzca la fecha y hora de inicio y la fecha y
+hora de finalización de un evento, y calcula la duración total del evento en horas y minutos.

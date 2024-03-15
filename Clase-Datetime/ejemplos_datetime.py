@@ -29,9 +29,9 @@ print(date4.timetz())
 date4 = date4.replace(year=2019, month=1)
 
 # Permite convertir datetime a otra timezone
-print(date4.astimezone(tz=timezone.min))
+print(date4.astimezone(tz=timezone.max))
 
-# Imprimir con formato
+# Imprimir con formato # Hay mas formatos posibles
 print(date2.strftime('%A, %d. %B %Y %I:%M%p'))
 
 # Ejemplo mas complejo

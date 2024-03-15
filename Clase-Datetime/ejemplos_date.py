@@ -28,6 +28,9 @@ print(fecha1.__str__())
 # Para imprimir con formato
 print(fecha1.strftime("%Y/%m/%d"))
 
+# Tambien es valido
+
+print(fecha1.year, "/", fecha1.month, "/", fecha1.day)
 
 # Un ejemplo mas "complejo"
 """ Se requiere un programa que pueda convertir una fecha del formato YYYY-MM-DD a YYYY/MM/DD. 

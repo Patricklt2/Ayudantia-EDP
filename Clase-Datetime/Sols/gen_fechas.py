@@ -1,18 +1,17 @@
 import random
 from datetime import datetime, timedelta
 
-# Function to generate random dates between 2016-01-01 and 2022-12-31
+
 def random_date(start_date, end_date):
     delta = end_date - start_date
     random_days = random.randrange(delta.days)
     return start_date + timedelta(days=random_days)
 
-# Generate list of dates
+
 start_date = datetime(2016, 1, 1)
 end_date = datetime(2022, 12, 31)
 dates = [random_date(start_date, end_date).strftime('%Y-%m-%d') for _ in range(100)]
 
-# Generate list of book names
 book_names = [
     "The Great Gatsby",
     "To Kill a Mockingbird",
@@ -118,7 +117,6 @@ book_names = [
     "Zero Cool"
 ]
 
-# Generate text file
 with open('books.txt', 'w') as file:
     for i in range(100):
-        file.write(f"{dates[i]}\t{random.choice(book_names)}\n")
+        file.write(f"{dates[i]},{random.choice(book_names)}\n")

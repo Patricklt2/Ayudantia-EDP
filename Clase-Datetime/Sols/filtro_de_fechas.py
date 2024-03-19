@@ -11,22 +11,28 @@ Por lo que se debe corregir antes de imprimir a pantalla.
 from datetime import date
 import csv
 
-filtro1 = date(2017, 4, 12)
-filtro2 = date(2021, 5, 25)
 
-filtro3 = date(2019, 6, 1)
-filtro4 = date(2019, 9, 30)
+def filtro_de_fechas():
 
-with open("books.txt", 'r') as csvfile:
+    filtro1 = date(2017, 4, 12)
+    filtro2 = date(2021, 5, 25)
+
+    filtro3 = date(2019, 6, 1)
+    filtro4 = date(2019, 9, 30)
+
     try:
-        reader = csv.reader(csvfile, delimiter=',')
-        for row in reader:
-            f_aux = date.fromisoformat(row[0])
-            if f_aux >= filtro1 or f_aux <= filtro2:
-                if f_aux >= filtro3 or f_aux <= filtro4:
-                    print('"', row[1], '"', ' "', f_aux.strftime("%Y/%m/%d"), '"')
-                else:
-                    # Aca tambien se podria haber puesto directamente 2020/%m/%d
-                    print('"', row[1], '"', ' "', f_aux.replace(year=2020).strftime("%Y/%m/%d"), '"')
+        with open("books.txt", 'r') as csvfile:
+            reader = csv.reader(csvfile, delimiter=',')
+            for row in reader:
+                f_aux = date.fromisoformat(row[0])
+                if filtro1 <= f_aux <= filtro2:
+                    if filtro3 <= f_aux <= filtro4:
+                        # Aca tambien se podria haber puesto directamente 2020/%m/%d
+                        print('"', row[1], '"', ' "', f_aux.replace(year=2020).strftime("%Y/%m/%d"), '"')
+                    else:
+                        print('"', row[1], '"', ' "', f_aux.strftime("%Y/%m/%d"), '"')
     except FileNotFoundError:
         print("No existe el archivo")
+
+
+filtro_de_fechas()

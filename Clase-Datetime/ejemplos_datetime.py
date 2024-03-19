@@ -35,4 +35,3 @@ print(date4.astimezone(tz=timezone.max))
 print(date2.strftime('%A, %d. %B %Y %I:%M%p'))
 
 # Ejemplo mas complejo
-

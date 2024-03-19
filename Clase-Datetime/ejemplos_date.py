@@ -32,6 +32,7 @@ print(fecha1.strftime("%Y/%m/%d"))
 
 print(fecha1.year, "/", fecha1.month, "/", fecha1.day)
 
+
 # Un ejemplo mas "complejo"
 """ Se requiere un programa que pueda convertir una fecha del formato YYYY-MM-DD a YYYY/MM/DD. 
 Ademas el programa debe filtrar cualquier fecha antes del 2017 y despues del 2021, Solo aceptando como validas 

@@ -1,4 +1,4 @@
-from datetime import time, timezone
+from datetime import time, timezone, datetime
 
 # Algunas formas para crear objetos time
 
@@ -27,4 +27,6 @@ else:
     print("El tiempo 2 < tiempo 1")
 
 tiempo1 = tiempo1.replace(tzinfo=timezone.utc)
-print(tiempo1.tzname())
+
+print(tiempo1)
+print(datetime.now().second)

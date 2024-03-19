@@ -13,7 +13,7 @@ def dur_evento():
         fin = datetime.datetime.fromisoformat(input("Ingrese fecha de fin en formato YYYY-MM-DDThh:mm:ss"))
 
         aux = fin - inicio
-        print("Horas: ", aux.days*24, "Minutos: ")
+        print("Hours: ", aux.days*24 + aux.seconds/3600, " Minutes: ", (aux.seconds % 3600) / 60)
     except IOError:
         print("Error de input")
 

@@ -2,10 +2,10 @@ import random
 from datetime import datetime, timedelta
 
 
-def random_date(start_date, end_date):
-    delta = end_date - start_date
+def random_date(start_d, end_d):
+    delta = end_d - start_d
     random_days = random.randrange(delta.days)
-    return start_date + timedelta(days=random_days)
+    return start_d + timedelta(days=random_days)
 
 
 start_date = datetime(2016, 1, 1)

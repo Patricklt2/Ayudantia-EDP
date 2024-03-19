@@ -15,7 +15,10 @@ Hacer un programa que pida al usuario que introduzca la fecha y hora de inicio, 
 hora de finalización de un evento, y calcule la duración total del evento en horas y minutos.
 
 Organizador / filtro de fechas:
-Dado el siguiente .csv se desea filtrar todos libros creados antes del 2017-04-14 y luego del 2021-05-25.
-El programa debe imprimir a pantalla con su fecha los libros en el siguiente formato: "Libro" "YYYY-MM-DD".
-Ademas los libros con fecha en 2019-06-DD a 2019-09-DD estan mal marcados, enrealidad su fecha es 2020;
+Dado el siguiente archivo se desea filtrar todos libros creados antes del 2017-04-14 y luego del 2021-05-25.
+Se garantiza que la primer columna del csv tiene fechas validas en formato "YYYY-MM-DD" y que la segunda columna del csv
+tiene los nombres de libros.
+El programa debe imprimir a pantalla con su fecha los libros en el siguiente formato: "Libro" "YYYY/MM/DD".
+Ademas los libros con fecha en 2019-06-01 a 2019-09-30 estan mal marcados, enrealidad su fecha es 2020;
 Por lo que se debe corregir antes de imprimir a pantalla.
+**IMPORTANTE** Se debe realizar UNA sola pasada

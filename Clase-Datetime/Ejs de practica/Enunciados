@@ -22,4 +22,4 @@ tiene los nombres de libros.
 El programa debe imprimir a pantalla con su fecha los libros en el siguiente formato: "Libro" "YYYY/MM/DD".
 Ademas los libros con fecha en 2019-06-01 a 2019-09-30 estan mal marcados, enrealidad su fecha es 2020;
 Por lo que se debe corregir antes de imprimir a pantalla.
-**IMPORTANTE** Se debe realizar UNA sola pasada
+**IMPORTANTE** Se debe realizar en UNA sola pasada

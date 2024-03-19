@@ -1,6 +1,7 @@
 Calculadora de edad:
 Hacer un programa que pida al usuario que introduzca
 su fecha de nacimiento y calcule su edad en años, meses y días.
+Tomen un mes como 28 dias
 
 Fechas de cumpleaños:
 Hacer un programa que pida al usuario que introduzca fechas de cumpleaños de varios amigos y
